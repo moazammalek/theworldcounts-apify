@@ -83,7 +83,7 @@ const startUrls = [
 const crawler = new PlaywrightCrawler({
     // proxyConfiguration,
     requestHandler: router,
-    minConcurrency: 3,
+    // minConcurrency: 3,
     maxConcurrency: 10,
     // headless: false,
     preNavigationHooks: [
