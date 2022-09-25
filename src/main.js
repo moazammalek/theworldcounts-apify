@@ -147,7 +147,7 @@ await KeyValueStore.setValue("tabData", tabData);
 let array = Object.keys(tabData);
 for (let index = 0; index < array.length; index++) {
     const key = array[index];
-    await Actor.call(process.env.APIFY_USER_ID + "/login", {
+    await Actor.call(process.env.APIFY_USER_ID + "/sendtosheet", {
         createBackup: false,
         deduplicateByEquality: false,
         keepSheetColumnOrder: true,
